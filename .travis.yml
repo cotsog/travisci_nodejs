@@ -1,6 +1,4 @@
-language: node_js
-node_js:
-  - 0.12
+language: cpp
 before_install:
   - npm install -g uglify-js
   - uglifyjs --help
