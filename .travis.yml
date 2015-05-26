@@ -1,4 +1,4 @@
 language: cpp
 before_install:
-  - sudo npm install -g uglify-js
+  - npm install -g uglify-js
   - uglifyjs --help
