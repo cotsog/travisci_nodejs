@@ -2,4 +2,4 @@ language: cpp
 env:
   - branch=$(git symbolic-ref --short -q HEAD)
 before_install:
-  - [["$branch" == "master"]] && echo $branch
+  - if [["$branch" == "master"]]; then echo $branch; fi
