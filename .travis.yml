@@ -1,4 +1,5 @@
 language: cpp
+env:
+  - branch=$(git symbolic-ref --short -q HEAD)
 before_install:
-  - npm install -g uglify-js
-  - uglifyjs --help
+  - [["branch" == "master"]] && echo $branch
