@@ -5,3 +5,4 @@ services:
   - redis-server
 before_install:
   - if "$branch" = "master"; then echo $branch; fi
+  - redis-server --version
