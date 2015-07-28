@@ -1,5 +1,7 @@
 language: cpp
 env:
   - branch=$(git symbolic-ref --short -q HEAD)
+services:
+  - redis-server
 before_install:
   - if "$branch" = "master"; then echo $branch; fi
